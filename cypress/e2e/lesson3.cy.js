@@ -3,9 +3,9 @@ describe('template spec', () => {
     cy.visit('//www.saucedemo.com/')
 
     // Test Case 1: Valid login with standard_user's credentials.
-    // cy.get('input#user-name.input_error.form_input').type('standard_user')
-    // cy.get('input#password.input_error.form_input').type('secret_sauce')
-    // cy.get('input#login-button.submit-button.btn_action').click()
+    cy.get('input#user-name.input_error.form_input').type('standard_user')
+    cy.get('input#password.input_error.form_input').type('secret_sauce')
+    cy.get('input#login-button.submit-button.btn_action').click()
 
     // Test Case 2: Adding items to cart
     // cy.get('button#add-to-cart-sauce-labs-backpack.btn_primary.btn_small.btn_inventory').click()
